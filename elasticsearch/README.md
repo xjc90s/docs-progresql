@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `elasticsearch` official image](https://hub.docker.com/_/elasticsearch) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.2`](https://github.com/docker-library/elasticsearch/blob/c9afd496f5727e62cd8150624a6e8a8fdb1a2085/8/Dockerfile)
--	[`7.17.4`](https://github.com/docker-library/elasticsearch/blob/8869c735312681ee05f01494e2ec26b610ab94f8/7/Dockerfile)
--	[`6.8.23`](https://github.com/docker-library/elasticsearch/blob/00b6bd7d3432a1c7ba195060bf6d13d9a2541c11/6/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
+
+[![i386/elasticsearch build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/elasticsearch.svg?label=i386/elasticsearch%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/elasticsearch/)
 
 # Quick reference (cont.)
 
