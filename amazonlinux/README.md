@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `amazonlinux` official image](https://hub.docker.com/_/amazonlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,12 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20220426.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/7f5bc7447a2d475aea0383912f6abce963e04223/Dockerfile)
--	[`2.0.20220426.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/9e7db79f3c6d8599246d8432508337b3e9acf555/Dockerfile)
--	[`2018.03.0.20220503.0`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/61f736f29a376b3e5449cd3247d8f2e0b0f2180a/Dockerfile)
--	[`2018.03.0.20220503.0-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/1076f30acaf2d9759d2c4466c613457af88cb61f/Dockerfile)
--	[`2022.0.20220504.1`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/c82726861f7bb251c75a9af7011010e57d08d82f/Dockerfile)
--	[`2022.0.20220504.1-with-sources`, `2022-with-sources`, `devel-with-sources`](https://github.com/amazonlinux/container-images/blob/f0672b0c0d6e33d420f4013236a584b7ba9e8e6e/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
+
+[![mips64le/amazonlinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/amazonlinux.svg?label=mips64le/amazonlinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/amazonlinux/)
 
 # Quick reference (cont.)
 
