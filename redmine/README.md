@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.1`, `5.1`, `5`, `latest`, `5.1.1-bookworm`, `5.1-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/5b28bcaaca4e14c41564d43cf5e53b0a13b49155/5.1/bookworm/Dockerfile)
+-	[`5.1.1`, `5.1`, `5`, `latest`, `5.1.1-bookworm`, `5.1-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/9f8737bd02cab294935e8ef8521ae51bfad9aee8/5.1/bookworm/Dockerfile)
 -	[`5.1.1-alpine3.18`, `5.1-alpine3.18`, `5-alpine3.18`, `alpine3.18`, `5.1.1-alpine`, `5.1-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/5b28bcaaca4e14c41564d43cf5e53b0a13b49155/5.1/alpine3.18/Dockerfile)
--	[`5.0.7`, `5.0`, `5.0.7-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/d65c2af08af53ba1c68beca8b10ae59fa4e402d5/5.0/bookworm/Dockerfile)
+-	[`5.0.7`, `5.0`, `5.0.7-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/9f8737bd02cab294935e8ef8521ae51bfad9aee8/5.0/bookworm/Dockerfile)
 -	[`5.0.7-alpine3.18`, `5.0-alpine3.18`, `5.0.7-alpine`, `5.0-alpine`](https://github.com/docker-library/redmine/blob/d65c2af08af53ba1c68beca8b10ae59fa4e402d5/5.0/alpine3.18/Dockerfile)
 
 # Quick reference (cont.)
@@ -112,14 +112,14 @@ services:
       REDMINE_SECRET_KEY_BASE: supersecretkey
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: redmine
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/cd78c2e058c5a648c0ef42590943736612332666/redmine/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8b35a43795bda4f4ca1299bee2d02afe2434ee7f/redmine/stack.yml)
 
 Run `docker stack deploy -c stack.yml redmine` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

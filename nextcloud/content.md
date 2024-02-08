@@ -169,6 +169,8 @@ To use an external SMTP server, you have to provide the connection details. To c
 -	`MAIL_FROM_ADDRESS` (not set by default): Use this address for the 'from' field in the emails sent by Nextcloud.
 -	`MAIL_DOMAIN` (not set by default): Set a different domain for the emails than the domain where Nextcloud is installed.
 
+At least `SMTP_HOST`, `MAIL_FROM_ADDRESS` and `MAIL_DOMAIN` must be set for the configurations to be applied.
+
 Check the [Nextcloud documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/email_configuration.html) for other values to configure SMTP.
 
 To use an external S3 compatible object store as primary storage, set the following variables:
@@ -278,7 +280,7 @@ Then run `docker-compose up -d`, now you can access Nextcloud at http://localhos
 
 ## Base version - FPM
 
-When using the FPM image, you need another container that acts as web server on port 80 and proxies the requests to the Nextcloud container. In this example a simple nginx container is combined with the Nextcloud-fpm image and a MariaDB database container. The data is stored in docker volumes. The nginx container also needs access to static files from your Nextcloud installation. It gets access to all the volumes mounted to Nextcloud via the `volumes_from` option.The configuration for nginx is stored in the configuration file `nginx.conf`, that is mounted into the container. An example can be found in the examples section [here](https://github.com/nextcloud/docker/tree/master/.examples).
+When using the FPM image, you need another container that acts as web server on port 80 and proxies the requests to the Nextcloud container. In this example a simple nginx container is combined with the Nextcloud-fpm image and a MariaDB database container. The data is stored in docker volumes. The nginx container also needs access to static files from your Nextcloud installation. It gets access to all the volumes mounted to Nextcloud via the `volumes_from` option. The configuration for nginx is stored in the configuration file `nginx.conf`, that is mounted into the container. An example can be found in the examples section [here](https://github.com/nextcloud/docker/tree/master/.examples).
 
 As this setup does **not include encryption**, it should be run behind a proxy.
 

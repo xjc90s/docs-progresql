@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.0`, `8.2`, `8`, `innovation`, `latest`, `8.2.0-oraclelinux8`, `8.2-oraclelinux8`, `8-oraclelinux8`, `innovation-oraclelinux8`, `oraclelinux8`, `8.2.0-oracle`, `8.2-oracle`, `8-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/3e959c224b965b0dd92a59a1dedeb7c34a24f550/innovation/Dockerfile.oracle)
--	[`8.0.35`, `8.0`, `8.0.35-oraclelinux8`, `8.0-oraclelinux8`, `8.0.35-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/3e959c224b965b0dd92a59a1dedeb7c34a24f550/8.0/Dockerfile.oracle)
--	[`8.0.35-bullseye`, `8.0-bullseye`, `8.0.35-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/3e959c224b965b0dd92a59a1dedeb7c34a24f550/8.0/Dockerfile.debian)
+-	[`8.3.0`, `8.3`, `8`, `innovation`, `latest`, `8.3.0-oraclelinux8`, `8.3-oraclelinux8`, `8-oraclelinux8`, `innovation-oraclelinux8`, `oraclelinux8`, `8.3.0-oracle`, `8.3-oracle`, `8-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/ffa6423ca24168e4d96631b5e8f536ac826d2a5b/innovation/Dockerfile.oracle)
+-	[`8.0.36`, `8.0`, `8.0.36-oraclelinux8`, `8.0-oraclelinux8`, `8.0.36-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/ffa6423ca24168e4d96631b5e8f536ac826d2a5b/8.0/Dockerfile.oracle)
+-	[`8.0.36-bullseye`, `8.0-bullseye`, `8.0.36-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/ffa6423ca24168e4d96631b5e8f536ac826d2a5b/8.0/Dockerfile.debian)
 
 # Quick reference (cont.)
 
@@ -167,7 +167,7 @@ This variable is mandatory and specifies the password that will be set for the M
 
 ### `MYSQL_DATABASE`
 
-This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](http://dev.mysql.com/doc/en/adding-users.html)) to this database.
+This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](https://dev.mysql.com/doc/refman/en/creating-accounts.html)) to this database.
 
 ### `MYSQL_USER`, `MYSQL_PASSWORD`
 

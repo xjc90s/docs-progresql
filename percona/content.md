@@ -96,7 +96,7 @@ By default, `root` can connect from anywhere. This option restricts root connect
 
 ### `MYSQL_DATABASE`
 
-This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](http://dev.mysql.com/doc/en/adding-users.html)) to this database.
+This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](https://dev.mysql.com/doc/refman/en/creating-accounts.html)) to this database.
 
 ### `MYSQL_USER`, `MYSQL_PASSWORD`
 
@@ -137,6 +137,14 @@ $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-ro
 ```
 
 Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, `MYSQL_DATABASE`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
+
+## Telemetry
+
+Starting with Percona Server 8.0.35-27, telemetry will be enabled by default. If you decide not to send usage data to Percona, you can set the `PERCONA_TELEMETRY_DISABLE=1` environment variable. For example:
+
+```console
+$ docker run --name some-mysql -e  PERCONA_TELEMETRY_DISABLE=1 -d %%IMAGE%%:tag
+```
 
 # Initializing a fresh instance
 

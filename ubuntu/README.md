@@ -24,11 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20231211`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20231211-1c7098d1&id=1c7098d1f72badd8cc2d425da3e2aacbe394fb7d)
--	[`22.04`, `jammy-20231211.1`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20231211.1-688af4b1&id=688af4b17cff5f46798923b58dca3922c9dceed7)
--	[`23.04`, `lunar-20231128`, `lunar`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20231128-1e15482a&id=1e15482adc1232275aec0e3566d81c6dd033ab2f)
--	[`23.10`, `mantic-20231128`, `mantic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20231128-f8f436b9&id=f8f436b92c9e971f61f0bf30d27ac4dda209703a)
--	[`24.04`, `noble-20231214`, `noble`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20231214-fa343037&id=fa34303717c5b27d6b269d5a909703c3cc2c9492)
+-	[`20.04`, `focal-20240123`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20240123-fb52992f&id=fb52992ff7e59e29008a6e1fa583207d2f36b9fe)
+-	[`22.04`, `jammy-20240125`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240125-09015311&id=090153117a4ac607556c868f91937e9a4b085697)
+-	[`23.10`, `mantic-20240122`, `mantic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20240122-07aef2de&id=07aef2de3835f07015f042626ae71721ca4f6bd1)
+-	[`24.04`, `noble-20240127.1`, `noble`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240127.1-3b522bb2&id=3b522bb20a4c6b1895481998458cf50d761e2822)
 
 # Quick reference (cont.)
 

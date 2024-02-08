@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.4.2-php8.1-apache`, `6.4-php8.1-apache`, `6-php8.1-apache`, `php8.1-apache`, `6.4.2-php8.1`, `6.4-php8.1`, `6-php8.1`, `php8.1`](https://github.com/docker-library/wordpress/blob/ac65dab91d64f611e4fa89b5e92903e163d24572/latest/php8.1/apache/Dockerfile)
--	[`6.4.2-php8.1-fpm`, `6.4-php8.1-fpm`, `6-php8.1-fpm`, `php8.1-fpm`](https://github.com/docker-library/wordpress/blob/ac65dab91d64f611e4fa89b5e92903e163d24572/latest/php8.1/fpm/Dockerfile)
--	[`6.4.2-php8.1-fpm-alpine`, `6.4-php8.1-fpm-alpine`, `6-php8.1-fpm-alpine`, `php8.1-fpm-alpine`](https://github.com/docker-library/wordpress/blob/ac65dab91d64f611e4fa89b5e92903e163d24572/latest/php8.1/fpm-alpine/Dockerfile)
--	[`6.4.2-apache`, `6.4-apache`, `6-apache`, `apache`, `6.4.2`, `6.4`, `6`, `latest`, `6.4.2-php8.2-apache`, `6.4-php8.2-apache`, `6-php8.2-apache`, `php8.2-apache`, `6.4.2-php8.2`, `6.4-php8.2`, `6-php8.2`, `php8.2`](https://github.com/docker-library/wordpress/blob/ac65dab91d64f611e4fa89b5e92903e163d24572/latest/php8.2/apache/Dockerfile)
--	[`6.4.2-fpm`, `6.4-fpm`, `6-fpm`, `fpm`, `6.4.2-php8.2-fpm`, `6.4-php8.2-fpm`, `6-php8.2-fpm`, `php8.2-fpm`](https://github.com/docker-library/wordpress/blob/ac65dab91d64f611e4fa89b5e92903e163d24572/latest/php8.2/fpm/Dockerfile)
--	[`6.4.2-fpm-alpine`, `6.4-fpm-alpine`, `6-fpm-alpine`, `fpm-alpine`, `6.4.2-php8.2-fpm-alpine`, `6.4-php8.2-fpm-alpine`, `6-php8.2-fpm-alpine`, `php8.2-fpm-alpine`](https://github.com/docker-library/wordpress/blob/ac65dab91d64f611e4fa89b5e92903e163d24572/latest/php8.2/fpm-alpine/Dockerfile)
--	[`6.4.2-php8.3-apache`, `6.4-php8.3-apache`, `6-php8.3-apache`, `php8.3-apache`, `6.4.2-php8.3`, `6.4-php8.3`, `6-php8.3`, `php8.3`](https://github.com/docker-library/wordpress/blob/ac65dab91d64f611e4fa89b5e92903e163d24572/latest/php8.3/apache/Dockerfile)
--	[`6.4.2-php8.3-fpm`, `6.4-php8.3-fpm`, `6-php8.3-fpm`, `php8.3-fpm`](https://github.com/docker-library/wordpress/blob/ac65dab91d64f611e4fa89b5e92903e163d24572/latest/php8.3/fpm/Dockerfile)
--	[`6.4.2-php8.3-fpm-alpine`, `6.4-php8.3-fpm-alpine`, `6-php8.3-fpm-alpine`, `php8.3-fpm-alpine`](https://github.com/docker-library/wordpress/blob/ac65dab91d64f611e4fa89b5e92903e163d24572/latest/php8.3/fpm-alpine/Dockerfile)
+-	[`6.4.3-php8.1-apache`, `6.4-php8.1-apache`, `6-php8.1-apache`, `php8.1-apache`, `6.4.3-php8.1`, `6.4-php8.1`, `6-php8.1`, `php8.1`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.1/apache/Dockerfile)
+-	[`6.4.3-php8.1-fpm`, `6.4-php8.1-fpm`, `6-php8.1-fpm`, `php8.1-fpm`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.1/fpm/Dockerfile)
+-	[`6.4.3-php8.1-fpm-alpine`, `6.4-php8.1-fpm-alpine`, `6-php8.1-fpm-alpine`, `php8.1-fpm-alpine`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.1/fpm-alpine/Dockerfile)
+-	[`6.4.3-apache`, `6.4-apache`, `6-apache`, `apache`, `6.4.3`, `6.4`, `6`, `latest`, `6.4.3-php8.2-apache`, `6.4-php8.2-apache`, `6-php8.2-apache`, `php8.2-apache`, `6.4.3-php8.2`, `6.4-php8.2`, `6-php8.2`, `php8.2`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.2/apache/Dockerfile)
+-	[`6.4.3-fpm`, `6.4-fpm`, `6-fpm`, `fpm`, `6.4.3-php8.2-fpm`, `6.4-php8.2-fpm`, `6-php8.2-fpm`, `php8.2-fpm`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.2/fpm/Dockerfile)
+-	[`6.4.3-fpm-alpine`, `6.4-fpm-alpine`, `6-fpm-alpine`, `fpm-alpine`, `6.4.3-php8.2-fpm-alpine`, `6.4-php8.2-fpm-alpine`, `6-php8.2-fpm-alpine`, `php8.2-fpm-alpine`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.2/fpm-alpine/Dockerfile)
+-	[`6.4.3-php8.3-apache`, `6.4-php8.3-apache`, `6-php8.3-apache`, `php8.3-apache`, `6.4.3-php8.3`, `6.4-php8.3`, `6-php8.3`, `php8.3`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.3/apache/Dockerfile)
+-	[`6.4.3-php8.3-fpm`, `6.4-php8.3-fpm`, `6-php8.3-fpm`, `php8.3-fpm`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.3/fpm/Dockerfile)
+-	[`6.4.3-php8.3-fpm-alpine`, `6.4-php8.3-fpm-alpine`, `6-php8.3-fpm-alpine`, `php8.3-fpm-alpine`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.3/fpm-alpine/Dockerfile)
 -	[`cli-2.9.0-php8.1`, `cli-2.9-php8.1`, `cli-2-php8.1`, `cli-php8.1`](https://github.com/docker-library/wordpress/blob/480b5c35eb6382f4ae5581cfb9dfe54873d4f4a0/cli/php8.1/alpine/Dockerfile)
 -	[`cli-2.9.0`, `cli-2.9`, `cli-2`, `cli`, `cli-2.9.0-php8.2`, `cli-2.9-php8.2`, `cli-2-php8.2`, `cli-php8.2`](https://github.com/docker-library/wordpress/blob/480b5c35eb6382f4ae5581cfb9dfe54873d4f4a0/cli/php8.2/alpine/Dockerfile)
 -	[`cli-2.9.0-php8.3`, `cli-2.9-php8.3`, `cli-2-php8.3`, `cli-php8.3`](https://github.com/docker-library/wordpress/blob/d1cc7e6a226cf23ade72b83990310980e7ac5c2b/cli/php8.3/alpine/Dockerfile)
@@ -128,7 +128,7 @@ services:
       - wordpress:/var/www/html
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_DATABASE: exampledb
@@ -143,7 +143,7 @@ volumes:
   db:
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/456252a739783650c79bd1f6a7a19101fbecfc65/wordpress/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8b35a43795bda4f4ca1299bee2d02afe2434ee7f/wordpress/stack.yml)
 
 Run `docker stack deploy -c stack.yml wordpress` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

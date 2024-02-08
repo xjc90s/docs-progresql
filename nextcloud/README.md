@@ -16,7 +16,7 @@ WARNING:
 
 # IMPORTANT NOTE
 
-⚠ This image is not officially supported by Nextcloud GmbH, use at your own risk. Use the [All-in-One docker image](https://github.com/nextcloud/all-in-one#nextcloud-all-in-one) for easier deployment.
+⚠️⚠️⚠️ This image is maintained by community volunteers and designed for expert use. For quick and easy deployment that supports the full set of Nextcloud Hub features, use the [Nextcloud All-in-One docker container](https://github.com/nextcloud/all-in-one#nextcloud-all-in-one) maintained by Nextcloud GmbH.
 
 # Quick reference
 
@@ -28,15 +28,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`26.0.10-apache`, `26.0-apache`, `26-apache`, `26.0.10`, `26.0`, `26`](https://github.com/nextcloud/docker/blob/4cff57305b863a4e055595bf24b04028a7547e8d/26/apache/Dockerfile)
--	[`26.0.10-fpm`, `26.0-fpm`, `26-fpm`](https://github.com/nextcloud/docker/blob/4cff57305b863a4e055595bf24b04028a7547e8d/26/fpm/Dockerfile)
--	[`26.0.10-fpm-alpine`, `26.0-fpm-alpine`, `26-fpm-alpine`](https://github.com/nextcloud/docker/blob/4cff57305b863a4e055595bf24b04028a7547e8d/26/fpm-alpine/Dockerfile)
--	[`27.1.5-apache`, `27.1-apache`, `27-apache`, `stable-apache`, `production-apache`, `27.1.5`, `27.1`, `27`, `stable`, `production`](https://github.com/nextcloud/docker/blob/4cff57305b863a4e055595bf24b04028a7547e8d/27/apache/Dockerfile)
--	[`27.1.5-fpm`, `27.1-fpm`, `27-fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/4cff57305b863a4e055595bf24b04028a7547e8d/27/fpm/Dockerfile)
--	[`27.1.5-fpm-alpine`, `27.1-fpm-alpine`, `27-fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/4cff57305b863a4e055595bf24b04028a7547e8d/27/fpm-alpine/Dockerfile)
--	[`28.0.0-apache`, `28.0-apache`, `28-apache`, `apache`, `28.0.0`, `28.0`, `28`, `latest`](https://github.com/nextcloud/docker/blob/e6510ac5947c11258f7d910aed3a1ce8d0faa2c3/28/apache/Dockerfile)
--	[`28.0.0-fpm`, `28.0-fpm`, `28-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/e6510ac5947c11258f7d910aed3a1ce8d0faa2c3/28/fpm/Dockerfile)
--	[`28.0.0-fpm-alpine`, `28.0-fpm-alpine`, `28-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/e6510ac5947c11258f7d910aed3a1ce8d0faa2c3/28/fpm-alpine/Dockerfile)
+-	[`26.0.11-apache`, `26.0-apache`, `26-apache`, `26.0.11`, `26.0`, `26`](https://github.com/nextcloud/docker/blob/59dd41aaca14d3cd3ddbf072973c1b8a7bc14cc8/26/apache/Dockerfile)
+-	[`26.0.11-fpm`, `26.0-fpm`, `26-fpm`](https://github.com/nextcloud/docker/blob/59dd41aaca14d3cd3ddbf072973c1b8a7bc14cc8/26/fpm/Dockerfile)
+-	[`26.0.11-fpm-alpine`, `26.0-fpm-alpine`, `26-fpm-alpine`](https://github.com/nextcloud/docker/blob/59dd41aaca14d3cd3ddbf072973c1b8a7bc14cc8/26/fpm-alpine/Dockerfile)
+-	[`27.1.6-apache`, `27.1-apache`, `27-apache`, `stable-apache`, `production-apache`, `27.1.6`, `27.1`, `27`, `stable`, `production`](https://github.com/nextcloud/docker/blob/59dd41aaca14d3cd3ddbf072973c1b8a7bc14cc8/27/apache/Dockerfile)
+-	[`27.1.6-fpm`, `27.1-fpm`, `27-fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/59dd41aaca14d3cd3ddbf072973c1b8a7bc14cc8/27/fpm/Dockerfile)
+-	[`27.1.6-fpm-alpine`, `27.1-fpm-alpine`, `27-fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/59dd41aaca14d3cd3ddbf072973c1b8a7bc14cc8/27/fpm-alpine/Dockerfile)
+-	[`28.0.2-apache`, `28.0-apache`, `28-apache`, `apache`, `28.0.2`, `28.0`, `28`, `latest`](https://github.com/nextcloud/docker/blob/5aa43c00c808791cdd1504998e8cc88365140a60/28/apache/Dockerfile)
+-	[`28.0.2-fpm`, `28.0-fpm`, `28-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/5aa43c00c808791cdd1504998e8cc88365140a60/28/fpm/Dockerfile)
+-	[`28.0.2-fpm-alpine`, `28.0-fpm-alpine`, `28-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/5aa43c00c808791cdd1504998e8cc88365140a60/28/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -228,6 +228,8 @@ To use an external SMTP server, you have to provide the connection details. To c
 -	`MAIL_FROM_ADDRESS` (not set by default): Use this address for the 'from' field in the emails sent by Nextcloud.
 -	`MAIL_DOMAIN` (not set by default): Set a different domain for the emails than the domain where Nextcloud is installed.
 
+At least `SMTP_HOST`, `MAIL_FROM_ADDRESS` and `MAIL_DOMAIN` must be set for the configurations to be applied.
+
 Check the [Nextcloud documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/email_configuration.html) for other values to configure SMTP.
 
 To use an external S3 compatible object store as primary storage, set the following variables:
@@ -337,7 +339,7 @@ Then run `docker-compose up -d`, now you can access Nextcloud at http://localhos
 
 ## Base version - FPM
 
-When using the FPM image, you need another container that acts as web server on port 80 and proxies the requests to the Nextcloud container. In this example a simple nginx container is combined with the Nextcloud-fpm image and a MariaDB database container. The data is stored in docker volumes. The nginx container also needs access to static files from your Nextcloud installation. It gets access to all the volumes mounted to Nextcloud via the `volumes_from` option.The configuration for nginx is stored in the configuration file `nginx.conf`, that is mounted into the container. An example can be found in the examples section [here](https://github.com/nextcloud/docker/tree/master/.examples).
+When using the FPM image, you need another container that acts as web server on port 80 and proxies the requests to the Nextcloud container. In this example a simple nginx container is combined with the Nextcloud-fpm image and a MariaDB database container. The data is stored in docker volumes. The nginx container also needs access to static files from your Nextcloud installation. It gets access to all the volumes mounted to Nextcloud via the `volumes_from` option. The configuration for nginx is stored in the configuration file `nginx.conf`, that is mounted into the container. An example can be found in the examples section [here](https://github.com/nextcloud/docker/tree/master/.examples).
 
 As this setup does **not include encryption**, it should be run behind a proxy.
 

@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0-beta1`, `5.0`, `5`](https://github.com/docker-library/cassandra/blob/8313dd9e2e5d049117c1aa190494702f5ee60c83/5.0/Dockerfile)
--	[`4.1.3`, `4.1`, `4`, `latest`](https://github.com/docker-library/cassandra/blob/44614387cda4278e477056c24cde3070f679a32a/4.1/Dockerfile)
--	[`4.0.11`, `4.0`](https://github.com/docker-library/cassandra/blob/b57fae57e886db7b46c0851ed761b6b0a260f065/4.0/Dockerfile)
--	[`3.11.16`, `3.11`, `3`](https://github.com/docker-library/cassandra/blob/76e413ded2e5eb2c61d97296d01400d2fff2d6d5/3.11/Dockerfile)
--	[`3.0.29`, `3.0`](https://github.com/docker-library/cassandra/blob/0472adffa9e3b3361f2dbe4b089592d1cb84d36d/3.0/Dockerfile)
+-	[`5.0-beta1`, `5.0`, `5`, `5.0-beta1-jammy`, `5.0-jammy`, `5-jammy`](https://github.com/docker-library/cassandra/blob/47ea6259ee03f28639ffb493b847067689d59c2e/5.0/Dockerfile)
+-	[`4.1.3`, `4.1`, `4`, `latest`, `4.1.3-jammy`, `4.1-jammy`, `4-jammy`, `jammy`](https://github.com/docker-library/cassandra/blob/47ea6259ee03f28639ffb493b847067689d59c2e/4.1/Dockerfile)
+-	[`4.0.12`, `4.0`, `4.0.12-jammy`, `4.0-jammy`](https://github.com/docker-library/cassandra/blob/6aa49ecdcc9150e03abb379e258e85401989d91b/4.0/Dockerfile)
+-	[`3.11.16`, `3.11`, `3`, `3.11.16-jammy`, `3.11-jammy`, `3-jammy`](https://github.com/docker-library/cassandra/blob/47ea6259ee03f28639ffb493b847067689d59c2e/3.11/Dockerfile)
+-	[`3.0.29`, `3.0`, `3.0.29-jammy`, `3.0-jammy`](https://github.com/docker-library/cassandra/blob/47ea6259ee03f28639ffb493b847067689d59c2e/3.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -131,7 +131,7 @@ There are a small number of environment variables supported by the image which w
 
 -	`CASSANDRA_START_RPC`: This variable is for controlling if the thrift rpc server is started. It will set the [`start_rpc`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__start_rpc) option in `cassandra.yaml`.
 
--	`CASSANDRA_SEEDS`: This variable is the comma-separated list of IP addresses used by gossip for bootstrapping new nodes joining a cluster. It will set the `seeds` value of the [`seed_provider`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__seed_provider) option in `cassandra.yaml`. The `CASSANDRA_BROADCAST_ADDRESS` will be added the the seeds passed in so that the server will talk to itself as well.
+-	`CASSANDRA_SEEDS`: This variable is the comma-separated list of IP addresses used by gossip for bootstrapping new nodes joining a cluster. It will set the `seeds` value of the [`seed_provider`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__seed_provider) option in `cassandra.yaml`. The `CASSANDRA_BROADCAST_ADDRESS` will be added the seeds passed in so that the server will talk to itself as well.
 
 -	`CASSANDRA_CLUSTER_NAME`: This variable sets the name of the cluster and must be the same for all nodes in the cluster. It will set the [`cluster_name`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__cluster_name) option of `cassandra.yaml`.
 

@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.75.2`, `5.75`, `5`, `latest`](https://github.com/docker-library/ghost/blob/835436c2ad4d58e0c48c27db6d0b5bdc8f64a4ba/5/debian/Dockerfile)
--	[`5.75.2-alpine`, `5.75-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/835436c2ad4d58e0c48c27db6d0b5bdc8f64a4ba/5/alpine/Dockerfile)
+-	[`5.79.0`, `5.79`, `5`, `latest`](https://github.com/docker-library/ghost/blob/3b8b216b2cba46e1d4df13f4c51bab95de8075d3/5/debian/Dockerfile)
+-	[`5.79.0-alpine`, `5.79-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/3b8b216b2cba46e1d4df13f4c51bab95de8075d3/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -147,7 +147,7 @@ version: '3.1'
 services:
 
   ghost:
-    image: ghost:4-alpine
+    image: ghost:5-alpine
     restart: always
     ports:
       - 8080:2368
@@ -178,7 +178,7 @@ volumes:
   db:
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/45b7cc83c4763f5dc3501e1f7a2411eca1b16ce2/ghost/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8b35a43795bda4f4ca1299bee2d02afe2434ee7f/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
