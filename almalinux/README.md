@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10-kitten`, `10-kitten-20260129`](https://github.com/AlmaLinux/container-images/blob/886d47e4ecf3eed98fd41f40d2205303c79422ef/default/amd64/Dockerfile)
+-	[`10-kitten`, `10-kitten-20260227`](https://github.com/AlmaLinux/container-images/blob/f03a0f177d767ab6a5745773d9c519d8e14e14a7/default/amd64/Dockerfile)
 
--	[`10-kitten-minimal`, `10-kitten-minimal-20260129`](https://github.com/AlmaLinux/container-images/blob/886d47e4ecf3eed98fd41f40d2205303c79422ef/minimal/amd64/Dockerfile)
+-	[`10-kitten-minimal`, `10-kitten-minimal-20260227`](https://github.com/AlmaLinux/container-images/blob/f03a0f177d767ab6a5745773d9c519d8e14e14a7/minimal/amd64/Dockerfile)
 
 -	[`latest`, `10`, `10.1`, `10.1-20260129`](https://github.com/AlmaLinux/container-images/blob/af233919d4574c14336c76f427d3aed477025828/default/amd64/Dockerfile)
 
@@ -46,7 +46,7 @@ WARNING:
 	[https://bugs.almalinux.org](https://bugs.almalinux.org) or [GitHub](https://github.com/AlmaLinux/docker-images/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/almalinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/almalinux/), [`ppc64le`](https://hub.docker.com/r/ppc64le/almalinux/), [`s390x`](https://hub.docker.com/r/s390x/almalinux/)
+	[`amd64`](https://hub.docker.com/r/amd64/almalinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/almalinux/), [`ppc64le`](https://hub.docker.com/r/ppc64le/almalinux/), [`riscv64`](https://hub.docker.com/r/riscv64/almalinux/), [`s390x`](https://hub.docker.com/r/s390x/almalinux/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/almalinux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/almalinux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/almalinux))  
